@@ -1,0 +1,235 @@
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #363535ac;
+  padding: 0px;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 50px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: #c96706;   /* main bar color */
+  padding: 20px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  gap: 30px;   
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1.5 rem;
+  color: white;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+ 
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: #780891;
+  
+}
+
+/* Header */
+header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #780891;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #555;
+}s
+
+/* Navigation */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #780891;
+  margin: 0 10px;
+  padding: 5px 10px;
+
+}
+
+nav a:hover,
+nav a.selected {
+  background: #780891;
+  color: white;
+  border-radius: 5px;
+}
+
+/* About Me section */
+.aboutContainer {
+  display: flex;
+  align-items:flex-start;       
+  gap: 20px;                 
+  margin-top: 20px;
+}
+
+.aboutText {
+  flex: 3;                   
+}
+
+.aboutImage img {
+  max-width: 250px;         
+  border-radius: 10px;       
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;  
+    text-align: center;
+  }
+
+  .aboutImage img {
+    max-width: 150px;    
+  }
+}
+
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 30px 0 10px;
+  border-bottom: 2px solid #780891;
+  padding-bottom: 5px;
+  color: #222;
+}
+
+/* Paragraph styling  */
+p1, p2, p3, p4 {
+  display: block; 
+  margin-bottom: 15px;
+  color: #444;
+  justify-content: left;
+}
+
+/*  experience */
+p3 {
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+p4 {
+  line-height: 1.7;
+}
+
+.experience {
+  margin-top: 20px;
+}
+
+.job {
+  margin-bottom: 25px;
+}
+
+.job h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #363636;
+  margin-bottom: 8px;
+}
+
+.job .date {
+  font-weight: bold;
+  color: #780891; 
+  margin-left: 10px;
+}
+
+.job ul {
+  margin-left: 20px;
+  line-height: 1.7;
+}
+
+/* VISUALIZATION 1*/
+
+#visualizationsContainer {
+    margin-left: 40px;
+    text-align: center;
+    
+}
+
+#chart {
+  margin-left: 20px;
+  border: 3px solid #d7afaf;
+  background: white;
+  margin-top: 20px;
+}
+
+/* VISUALIZATION 2  */
+
+:root {
+  --yellow: #fff53d;
+  --red: rgb(71, 89, 201); 
+  --path-length: 0; 
+}
+
+#VisualizationContainer2 {
+  height: 150vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+}
+
+#thunder {
+    margin-top: 50px;
+  width: 450px;  
+  stroke: var(--red);
+  fill: var(--yellow);
+  stroke-width: 1px;
+  border: 2px solid rgb(200, 79, 162); 
+}
+
+#thunder.click path {
+  animation: draw 2s ease forwards;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: var(--path-length);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#text {
+  font-size: 2rem;
+  margin-top: 100px;
+}
