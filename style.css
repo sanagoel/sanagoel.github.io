@@ -65,7 +65,7 @@ header h1 {
 
 header p {
   font-size: 1.5rem;
-  color: #555;
+  color: #3b3b3b;
 }s
 
 /* Navigation */
@@ -136,7 +136,7 @@ h2 {
 p1, p2, p3, p4 {
   display: block; 
   margin-bottom: 15px;
-  color: #444;
+  color: #373737;
   justify-content: left;
 }
 
@@ -233,3 +233,62 @@ p4 {
   font-size: 2rem;
   margin-top: 100px;
 }
+
+
+/* /* VEGALITE VISUALIZATION */
+
+#HeadingVegalitePage{
+    margin-top: 20px ;
+    margin-left: 20px ;
+}
+
+p{
+    margin-left: 20px ;
+    padding: 20px;
+    /* max-width:500px; */
+}
+
+#chart1, #chart2, #chart3, #chart4 {
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 40px auto;     /* centers + adds space from edges */
+  padding: 20px;         /* adds space inside around the chart */
+  width: 100%;            /* responsive, not full width */
+  /* max-width: 600px;       */
+}
+
+/* #chart2{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin: 40px;
+} */
+
+h5{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 50px;
+    color: #030303;
+    text-decoration: underline;    
+    text-decoration-color: #f97406;
+    text-decoration-thickness: 2px;
+}
+
+
+/* Headings */
+h4 {
+    font-size: 1.5rem;
+    border-top: 2px solid #780891;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 60px;
+    margin-top: 60px;
+    /* margin-bottom: 10px; */
+    color: #4a4949;
+    padding-top: 30px;
+}
+
