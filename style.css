@@ -253,19 +253,12 @@ p{
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin: 40px auto;     /* centers + adds space from edges */
-  padding: 20px;         /* adds space inside around the chart */
-  width: 100%;            /* responsive, not full width */
+  margin: 40px auto;   
+  padding: 20px;         
+  width: 100%;            
   /* max-width: 600px;       */
 }
 
-/* #chart2{
-    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  margin: 40px;
-} */
 
 h5{
     font-size: 1.7rem;

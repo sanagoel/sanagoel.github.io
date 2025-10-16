@@ -1,4 +1,4 @@
-// Load your CSV using D3, then render the Vega-Lite chart
+// Load CSV, then render the Vega-Lite chart
 async function fetchData() {
   const data = await d3.csv("./dataset/videogames_wide.csv");
 
@@ -88,13 +88,7 @@ async function fetchData() {
     ]
   };
 
-//   vegaEmbed("#chart2", spec2);
-// }
 
-// // Call the function to render Chart 2
-// renderChart2();
-
-  // -- Chart 3: 
    // --- Chart 3: Regional Sales by Platform (Heatmap) ---
 const spec3 = {
   $schema: "https://vega.github.io/schema/vega-lite/v5.json",
@@ -174,5 +168,4 @@ const spec3 = {
 }
 
 
-// Call the function
 fetchData();
