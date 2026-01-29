@@ -3,128 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/yiq4ztw.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-    <link rel="stylesheet" href="/style.css">
-
-<script>
-      const options = {
-        config: {
-          // Vega-Lite default configuration
-        },
-        init: (view) => {
-          // initialize tooltip handler
-          view.tooltip(new vegaTooltip.Handler().call);
-        },
-        view: {
-          // view constructor options
-          // remove the loader if you don't want to default to vega-datasets!
-          loader: vega.loader({
-            baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/",
-          }),
-          renderer: "canvas",
-        },
-      };
-
-      // register vega and vega-lite with the API
-      vl.register(vega, vegaLite, options);
-    </script>
-    <style></style>
-
+    <title>Sana's Portfolio</title>
 </head>
-
-
 <body>
 
-     <nav class="navbar">
-    <ul>
-        <li><a href="/" class="selected">Home</a></li>
-        <li><a href="/visualizations.html">Visualizations</a></li>
-        <li><a href="/vegaliteJson.html">Observable-Vegalite</a></li>
+    <nav class="navbar">
+        <ul class="nav-tracker">
+            <li><a href="#home" data-section="home">Home &#8212</a></li>
+            <!-- <li><a href="#home" data-section="home">&#8212</a></li> -->
+            <li><a href="#work" data-section="work">Work &#8212</a></li>
+            <li><a href="#about" data-section="about">About</a></li>
+        </ul>
 
-        <!-- <li><a href="#about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li> -->
-    </ul>
+        <ul class="nav-links">
+            <li><a href="mailto:sga203@sfu.ca">E-mail &#8599</a></li>
+            <li><a href="https://drive.google.com/file/d/18vKj_YLFLn_evQBI6BcVR2Y_jNGBAKNo/view?usp=sharing">Resume &#8599</a></li>
+        </ul>
     </nav>
 
-    <header>
-        <h1>Sana Goel</h1>
-        <p>Hey there! Welcome to my data visualization portfolio.</p>
 
-    </header>
+     <!-- <nav class="navbar">
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mailto:sga203@sfu.ca">E-mail &#8599</a></li>
+            <li><a href="https://drive.google.com/file/d/10GJFRYvqNk21gcckQC9jPa6ds8-pgTwW/view?usp=sharing">Resume &#8599</a></li>
+            </ul>
+     </nav> -->
+        <section class="hero" id="home">
+            <h1>Sana</h1>
+            <div class="banner-area">
+                <div class="banner-track">
+                    <h2>UX / UI</h2>
+                    <p class="spin">w</p>
+                    <h2>Product Design</h2>
+                    <p class="spin">t</p>
+                    <h2>Human Computer Interaction</h2>
+                    <p class="spin">w</p>
 
-    <main>
-        
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="aboutContainer">
-
-             <div class="aboutImage">
-                <img src="./images /MyPicture.JPG" alt="Photo of me">
-             </div>
-
-            <div class="aboutText">
-            <p>Hi, I’m Sana , a passionate designer and curious learner carving my path in the creative world. 
-                I love tackling design challenges, especially those centered around user experience and research.
-                 I'm currently pursuing a Bachelor of Arts in Interactive Arts and Technology at Simon Fraser
-                  University. Outside of school and work I love watvhing shows and movies, painting and most of
-                   all travelling and exploring new places</p>
-            </div>
-            
-            </div>
-            </section>
-
-            <h2> Education : </h2>
-            <p>I Compelted my secondary education in New Delhi, India where I was born and raised. 
-                After this I moved to Canada in 2023 for my Undergraduation at SFU, I Plan to concentrate 
-                in Interaction Design and Evidence baed Interactive Systems. </p>
-
-            <h2> skills : </h2>
-            <p> - figma <br>
-                - adobe Creative cloud <br>
-                - Phython <br>
-                - Javascript <br>
-                - rhino <br>
-                - Autodesk Maya <br>
-                - Microsoft office <br>
-                - Tableau 
-            </p>
-
-            <h2>Experience :</h2>
-
-            <div class="experience">
-            <div class="job">
-                <h3>Freelance Work <span class="date">2024 – Present</span></h3>
-                <ul>
-                <li>Designed and illustrated business cards for small business ‘Grand Ma’s’, tailored to the client’s vision using feedback and communication, which helped boost brand visibility. <strong>(August 2024)</strong></li>
-                <li>Designed and illustrated brochures and vouchers for ‘Deiti’ skin clinic using InDesign and Illustrator based on existing brand guidelines, to enhance visibility for the clinic and attract new clients. <strong>(September 2024)</strong></li>
-                <li>Designed posters for a student film, created on Figma using Photoshop for image editing, for its screening at a film festival in Portugal, supporting the international promotion of the film. <strong>(June 2025)</strong></li>
-                </ul>
+                    <h2>UX / UI</h2>
+                    <p class="spin">w</p>
+                    <h2>Product Design</h2>
+                    <p class="spin">t</p>
+                    <h2>Human Computer Interaction</h2>
+                </div>
             </div>
 
-            <div class="job">
-                <h3>Creative Intern at Leo Burnett <span class="date">July – August 2024</span></h3>
-                <ul>
-                <li>Created posters and mockups for Burger King campaigns using Photoshop and Illustrator to visualize concepts for pitches, leading to a compelling presentation for the client and enhanced audience engagement.</li>
-                <li>Presented social media concepts for IKEA India by researching and sharing ideation with the team, contributing to the expansion of their campaign on social platforms.</li>
-                <li>Assisted on set during IKEA video shoots by observing and supporting the production team, gaining hands-on experience in campaign film production.</li>
-                </ul>
+            <div>
+               <p style="color: #dcddff; font-size: 1.2rem; padding-top: .5rem;" >Currently based in Vancouver, Canada @ Simon Fraser University</p>
             </div>
+            <div class="tagline">
+                <p class="tagline_header">
+                   Designing user experiences driven by empathy, curiosity, and purpose.   
+                </p>
+                <p>
+                    I aim to design products that prioritize those who empower our communities—placing users first. Through projects that create meaningful, positive impact.
+                </p>
+            </div>
+        </section>
+
+
+    <section class="project_highlight" id="work">
+        <div class="project_highlight_header">   
+            <div>
+                <h3>Design Work</h3>
+                <p>( Check out some of my work here )</p>
+            </div>
+            <!-- <div class="arrow">
+                <img src="images/homepage/pinkarrow.png" alt=""> 
+            </div> -->
+        </div> 
+        <div class="cards">
+            <!-- <a href="#"><img src="/images/Group 16.png" alt=""></a> -->
+            <a href="jazzdor.html"><img src="images/homepage/jazzdorcard.webp" alt=""></a>
+            <a href="gotcraft.html"><img src="images/homepage/gotcraftcard.webp" alt=""></a>
+            <a href="goodroots.html"><img src="images/homepage/goodrootcard.webp" alt=""></a>
+        </div>
+    </section>
+
+    <section class="arrow_2">
+        <img src="images/homepage/arrow2.png" alt="">
+    </section>
+
+    <section class="about_hero" id="about">
+        <div class="content">
+            <div class="my_img">
+                <img src="images/about/IMG_2530.JPG" alt="">
+                <!-- <p>Currently studying Interactive Arts and Technology @ SFU <br>
+                Located in Vancouver, British Columbia </p> -->
             </div>
 
-         </div>
-    </main>
+            <div class="info">
+                <div class="title_main">
+                    <h3>More About Me</h3>
+                    <p>( Get to know a little about who I am )</p>
+                </div>
+                <div class="box">
+                    <p>Hi, I am Sana. I am a passionate designer and keen learner looking to build a path for myself in the creative world. I love solving problems in the design space, especially those related to user experience. Currently I am pursuing a bachelor of arts degree at Simon Fraser University in Interactive Arts and Technology, Where I am in my third year. I strive to build my skills and career in the field of UX design and research.</p>
+                    <div class="lets_talk">
+                        <div class="title">
+                            <h3>Lets Talk</h3>
+                            <p>v</p>
+                        </div>
+                        <div class="links">
+                            <a href="mailto:sga203@sfu.ca">( &#8599  E-mail )</a>
+                            <a href="https://www.linkedin.com/in/sana-goel-a27974290">(   &#8599  Linkedin )</a>
+                            <a href="https://drive.google.com/file/d/10GJFRYvqNk21gcckQC9jPa6ds8-pgTwW/view?usp=sharing">(  &#8599   Resume )</a>
+                        </div>
+                    </div>
+                    <div class="activities">
+                        <div class="When_working ">
+                            <h3>When Working </h3>
+                            <p>- UX design and research</p>
+                            <p>- Videography and editing </p>
+                            <p>- Modelling and 3D animation </p>
+                        </div>
+                        <div class="at_play">
+                            <h3>At Play </h3>
+                            <p>- Exploring new places </p>
+                            <p>- Watercolour painting </p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>   
+
+<!-- JAVA -->
+  <script>
+  const sections = [...document.querySelectorAll("section[id]")];
+  const navLinks = [...document.querySelectorAll(".nav-tracker a")];
+
+  function updateTracker() {
+    const scrollPos = window.scrollY + window.innerHeight * 0.5;
+
+    sections.forEach(section => {
+      const id = section.id;
+      const link = document.querySelector(
+        `.nav-tracker a[data-section="${id}"]`
+      );
+
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      // Active section
+      if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+        navLinks.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+      }
+
+      // Passed logic (works both directions)
+      if (scrollPos >= sectionTop) {
+        link.classList.add("passed");
+      } else {
+        link.classList.remove("passed");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", updateTracker);
+  window.addEventListener("load", updateTracker);
+</script>
 
 
-    <script src="main.js"></script>
 </body>
 </html>
