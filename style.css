@@ -24,14 +24,6 @@ body::before {
   z-index: -1;
 }
 
-
- 
-@font-face {
-  font-family: "FoundersGrotesk";
-  src: url("fonts/test-founders-grotesk-regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 @font-face {
   font-family: "starthings";
   src: url("fonts/starthings.woff2") format("woff2");
@@ -41,7 +33,7 @@ body::before {
 p{
     padding: 0;
     margin: 0;
-    font-family: "FoundersGrotesk" ;
+    font-family: 'Inter', sans-serif;
 }
 .hero h1{
     padding: 0;
@@ -67,7 +59,7 @@ p{
 .banner-track h2{
     margin: 0;
     line-height: 0;
-    font-family: "FoundersGrotesk";
+    font-family: 'Inter', sans-serif;
     font-size: 2rem;
     color: #FF9378;
     padding: 0rem;
@@ -76,7 +68,7 @@ p{
 .about_subtitle h2{
     margin: 0;
     line-height: 0;
-    font-family: "FoundersGrotesk";
+   font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     color: #FF78C5;
     padding: .5rem;
@@ -402,7 +394,7 @@ p{
 .lets_talk a{
     padding: 0;
     margin: 0;
-    font-family: "FoundersGrotesk" ;
+    font-family: 'Inter', sans-serif;
     color: white;
     font-size: 1.25rem;
     text-decoration: none;
@@ -417,7 +409,7 @@ p{
 .my_img p{
     padding: 0;
     margin: 0;
-    font-family: "FoundersGrotesk" ;
+    font-family: 'Inter', sans-serif;
     color: white;
     font-size: 1rem;
     padding-left: 7rem;
@@ -433,7 +425,7 @@ p{
 
 .box{
     padding: 2rem;
-    background-image: url(images/homepage/emphasisbox3.png);
+    /* background-image: url(images/homepage/emphasisbox3.png); */
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;

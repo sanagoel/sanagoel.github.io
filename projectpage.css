@@ -14,12 +14,12 @@ body{
   font-weight: normal;
   font-style: normal;
 } */
-@font-face {
+/* @font-face {
   font-family: "FoundersGrotesk";
   src: url("fonts/test-founders-grotesk-regular.woff2") format("woff2");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; */
+/* } */
 @font-face {
   font-family: "starthings";
   src: url("fonts/starthings.woff2") format("woff2");
@@ -243,7 +243,7 @@ p{
     padding: 0;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    font-family: "FoundersGrotesk";
+     font-family: 'Inter', sans-serif;
     line-height: 150%;
 }
 .hero .name p{
@@ -259,7 +259,7 @@ p{
     padding: 0;
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
-    font-family: "FoundersGrotesk";
+    font-family: 'Inter', sans-serif;
     line-height: 120%;
     font-weight: 200;
     max-width: 50%;
@@ -900,7 +900,7 @@ p{
     padding: 0;
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
-    font-family: "FoundersGrotesk";
+    font-family: 'Inter', sans-serif;
     line-height: 120%;
     font-weight: 200;
     max-width: 50%;
@@ -919,7 +919,7 @@ p{
     padding: 0;
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
-    font-family: "FoundersGrotesk";
+    font-family: 'Inter', sans-serif;
     line-height: 120%;
     font-weight: 200;
     max-width: 50%;
