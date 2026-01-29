@@ -8,18 +8,6 @@ body{
     background-repeat: no-repeat;
 }
 
-/* @font-face {
-  font-family: "NewSpirit";
-  src: url("fonts/NewSpiritTRIAL-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-} */
-/* @font-face {
-  font-family: "FoundersGrotesk";
-  src: url("fonts/test-founders-grotesk-regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal; */
-/* } */
 @font-face {
   font-family: "starthings";
   src: url("fonts/starthings.woff2") format("woff2");
