@@ -278,7 +278,7 @@ p{
 }
 
 .tagline_header{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight:700;
     font-style: italic;
     padding-bottom: .5rem;
@@ -472,4 +472,102 @@ p{
     padding-top: 2rem;
     padding-bottom: 2rem;
     /* padding-right: 12rem; */
+}
+
+
+/* ___________________________________________________________ */
+/* BREAKPOINTS */
+/* ___________________________________________________________ */
+
+@media screen and (min-width: 1270px) {
+    .tagline{
+        font-size: 1.4rem;
+        background-image: url(images/homepage/arrow1.png);
+        background-position: right 7rem;
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+    .tagline_header{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1460px) {
+
+
+.tagline{
+    margin: 0;
+    padding: 0rem;
+    padding-bottom: 10rem;
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 27rem; */
+
+    background-image: url(images/homepage/arrow1.png);
+    background-position: right 7rem;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+}
+/* @media screen and (min-width: 160px) {
+
+
+.tagline{
+    margin: 0;
+    padding: 0rem;
+    padding-bottom: rem;
+}
+} */
+/*  */
+
+@media screen and (min-width: 1630px) {
+    .tagline{
+    margin: 0;
+    padding: 0rem;
+    padding-bottom: 12rem;
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 27rem; */
+
+    background-image: none;
+    background-position: right 7rem;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.tagline_header{
+    font-size: 2.4rem;
+    font-weight:700;
+    font-style: italic;
+    padding-bottom: .5rem;
+    max-width: 90%;
+}
+.p{
+    font-size:1.7rem;
+}
+.hero {
+    margin: 0;
+    padding-top:4rem ;
+    /* padding-bottom: 5rem; */
+    padding-left: 14rem;
+    padding-right: 14rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url("images/homepage/emphasis\ box.png");
+    
+    background-size: 80%;
+    background-position: center 3rem; 
+    background-repeat: no-repeat;
+}
+}
+
+@media screen and (min-width: 2200px) {
+
+.hero {
+    
+    padding-left: 21rem;
+    padding-right: 21rem;
+}
 }
