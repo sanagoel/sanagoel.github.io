@@ -33,6 +33,7 @@ body{
   font-family: 'Playfair Display', serif;
   color: #dcddff;
   font-size: 1.3rem;
+
 }
 .back a:hover {
     color: #FF9378;
@@ -913,3 +914,4 @@ p{
     max-width: 50%;
     padding-left: 3.5rem;
 }
+

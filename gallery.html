@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+     <nav class="navbar" style="background-color: #912356;">
+        <div class="back">
+                <p>&#8594</p>
+                <a style="text-decoration: none;" href="index.html"> Home</a>
+                <p>/</p>
+                <p> Visual gallery</p>
+        </div>
+
+        <!-- <div>
+            <button onclick="one()">1 column</button>
+            <button onclick="two()"></button>
+            <button onclick="four()">3 columns</button>
+        </div> -->
+
+        <ul class="nav-links">
+            <li><a href="mailto:sga203@sfu.ca">E-mail &#8599</a></li>
+            <li><a href="https://drive.google.com/file/d/1VHz_c50u7Qi3rRgrruv71LsOBmn4tNPY/view?usp=sharing">Resume &#8599</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <h1>Visual Gallery</h1>
+        <p> This is a visual gallery of my Graphic Design and visual work! <br> These are a mix of work done for digital and print assests for different projects and events. </p>
+
+    </div>
+
+    <div class="row">
+  <div class="column">
+    <img src="images/gallerywork/jazzdor/2 copy.webp">
+    <img src="images/gallerywork/jazzdor/27.webp">
+    <!-- <img src="images/gallerywork/jazzdor/Free_Cd_Jewel_Case_Mockup_5 copy 1.png"> -->
+    <img src="images/gallerywork/jazzdor/Bus Stop Branding Mockup PSD copy 1.webp">
+    <img src="images/gallerywork/jazzdor/Frame 96.webp">
+    <img src="images/gallerywork/jazzdor/Frame 97.webp">
+    <img src="images/gallerywork/jazzdor/Free_Cd_Jewel_Case_Mockup_5 copy 1.webp">
+    <img src="images/gallerywork/jazzdor/ID 1 NEW IDEKIDEK DIEK  1.webp">
+    <img src="images/gallerywork/jazzdor/JAZZdor visuals .webp">
+    <img src="images/gallerywork/jazzdor/Metro-Framed-Poster-Mockup-PSD copy 1.webp">
+    <img src="images/gallerywork/jazzdor/Real Cassette Tape Mockup copy 1.webp">
+    <img src="images/gallerywork/jazzdor/splits billboard  1.webp">
+    <img src="images/gallerywork/jazzdor/urban billboard mockup piano  copy 1.webp">
+    <img src="images/gallerywork/jazzdor/Vinyl-Cover-Record-trumpet  copy 1.webp">
+    <!-- <img src="images/gallerywork/jazzdor/Vinyl-Record-and-Cover-Presentation-Mock-up copy 1.webp"> -->
+    
+  </div>
+  
+  <div class="column">
+    <img src="images/gallerywork/painted lady/new export/Frame 220.webp">
+    <img src="images/gallerywork/painted lady/new export/Frame 246.webp">
+    <img src="images/gallerywork/painted lady/new export/Culteral Drop in Insert.webp">
+    <img src="images/gallerywork/painted lady/new export/Frame 221.webp">
+    <img src="images/gallerywork/painted lady/new export/Frame 220-1.webp">
+    
+    <img src="images/gallerywork/painted lady/new export/Look-y Loo Insert.webp">
+    
+    <img src="images/gallerywork/painted lady/new export/Frame 228.webp">
+    
+    <img src="images/gallerywork/painted lady/new export/Frame 247.webp">
+    <img src="images/gallerywork/painted lady/new export/Hunter insert.webp">
+    
+    <img src="images/gallerywork/painted lady/new export/Tabloid - 27.webp">
+    
+  </div>
+
+
+  <div class="column">
+    <img src="images/gallerywork/ascend/Registration closes soon.webp">
+    <img src="images/gallerywork/ascend/First Place.webp">
+    <img src="images/gallerywork/ascend/Second Place.webp">
+    <img src="images/gallerywork/ascend/Third Place.webp">
+    <img src="images/gallerywork/ascend/nwp.webp">
+    <img src="images/gallerywork/painted lady/clientposter.png">
+    <img src="images/gallerywork/painted lady/ethnography.jpg">
+    <img src="images/gallerywork/painted lady/new export/Tabloid - 28.webp">
+    <img src="images/gallerywork/painted lady/all 3.webp" alt="">
+    <!-- <img src="images/gallerywork/mjfh.png"> -->
+    <!-- <img src="images/gallerywork/painted lady/Look-y Loo Insert.png"> -->
+    
+  </div>
+
+  <div class="column">
+   
+    <!-- <img src="wedding.jpg">
+    <img src="mountainskies.jpg">
+    <img src="rocks.jpg">
+    <img src="underwater.jpg"> -->
+  </div>
+</div>
+    
+
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
+
+</body>
+</html>

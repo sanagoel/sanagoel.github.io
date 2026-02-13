@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #212b63;
+  position: relative;
+}
+
+.back{
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  /* padding-left: 1rem; */
+  background: none;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+@font-face {
+  font-family: "starthings";
+  src: url("fonts/starthings.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.back p{
+  font-family: 'Playfair Display', serif;
+  color: #dcddff;
+  font-size: 1.3rem;
+}
+.back a{
+  font-family: 'Playfair Display', serif;
+  color: #dcddff;
+  font-size: 1.3rem;
+}
+.back a:hover {
+    color: #FF9378;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+     font-family: 'Inter', sans-serif;
+    line-height: 150%;
+    
+}
+
+h1{
+   margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    font-size: 3rem;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    line-height: 0;
+    padding-bottom: 2rem;
+    margin-left: 3rem;
+}
+
+.header p{
+    margin-left: 3rem;
+    padding-bottom: 2rem;
+}
+
+.navbar {
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* keeps it above content */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tracker */
+.nav-tracker {
+  display: flex;
+  gap: .5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-tracker a {
+  text-decoration: none;
+   font-size: 1.3rem;
+   font-family: 'Playfair Display', serif;
+  color: #9aa0ff;          /* inactive */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Active section */
+.nav-tracker a.active {
+  color: #ffffff;          /* active */
+}
+
+/* Tracker */
+.nav-tracker a {
+  text-decoration: none;
+  color: #dcddff; /* default */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+/* Current section */
+.nav-tracker a.active {
+  color: #FF9378;
+}
+/* Sections already passed */
+.nav-tracker a.passed {
+  color: #FF9378; /* lighter but still "on" */
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+.nav-links li:not(:last-child)::after {
+  content: "x";
+  margin: 0 16px;
+  color: #DDDAFC;
+  font-family: "starthings"; /* ⬅️ font for x */
+  font-size: 1rem;                   /* optional */
+}
+.nav-links a {
+  margin: 0;
+  text-decoration: none;
+  line-height: 0;
+  color: #DDDAFC;
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 200;
+}
+.nav-links a:hover {
+    color: #FF9378;
+}
+.nav-links p{
+    margin: 0;
+    line-height: 0;
+    color: #DDDAFC;
+    font-family: "starthings";
+}
+
+/* NAV LINKS END HERE */
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.column img {
+  width: 100%;
+  height: auto; /* keeps aspect ratio */
+  margin-top: 8px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+button{
+align-items: center;
+justify-content: center;
+}

@@ -10,7 +10,6 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-
   background-image: url("images/homepage/texture.webp");
   background-size: 100%;
   background-position: top;
@@ -334,6 +333,23 @@ p{
   transform: translateY(-4rem);
 }
 
+.gallerylink{
+    text-align: center;
+    padding-top: .5rem;
+}
+.gallerylink a{
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration:none;
+}
+
+.gallerylink a:hover{
+    color: #FF9378;
+
+}
+
 .info{
     align-items: flex-end;
     margin-right: 8rem;
@@ -403,6 +419,9 @@ p{
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
+}
+.lets_talk a:hover{
+ color: #FF9378;
 }
 
 .activities {
